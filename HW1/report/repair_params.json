@@ -1,0 +1,66 @@
+{
+  "sigma_z_m": 5.51,
+  "beta_m": 50.0,
+  "sigma_a_ms2": 0.1,
+  "radius_m": 50.0,
+  "k_candidates": 5,
+  "v_max_kmh": 144.0,
+  "tuning_trips": 56,
+  "test_trips": 224,
+  "grid": [
+    {
+      "method": "hmm",
+      "param": "beta",
+      "value": 25.0,
+      "mae": 154.0132424118392
+    },
+    {
+      "method": "hmm",
+      "param": "beta",
+      "value": 50.0,
+      "mae": 153.74968739654594
+    },
+    {
+      "method": "hmm",
+      "param": "beta",
+      "value": 100.0,
+      "mae": 153.7606322230431
+    },
+    {
+      "method": "hmm",
+      "param": "beta",
+      "value": 200.0,
+      "mae": 154.95919540046833
+    },
+    {
+      "method": "hmm",
+      "param": "beta",
+      "value": 400.0,
+      "mae": 157.64553474416286
+    },
+    {
+      "method": "kalman",
+      "param": "sigma_a",
+      "value": 0.05,
+      "mae": 178.14856943422777
+    },
+    {
+      "method": "kalman",
+      "param": "sigma_a",
+      "value": 0.1,
+      "mae": 178.01467685255415
+    },
+    {
+      "method": "kalman",
+      "param": "sigma_a",
+      "value": 0.3,
+      "mae": 178.41827843080895
+    },
+    {
+      "method": "kalman",
+      "param": "sigma_a",
+      "value": 1.0,
+      "mae": 178.8052135651262
+    }
+  ]
+}

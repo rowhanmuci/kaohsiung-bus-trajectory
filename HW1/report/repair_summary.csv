@@ -1,0 +1,10 @@
+﻿item,value
+trips,18767.0
+input fixes,890024.0
+matched fixes,771601.0
+"offnet fixes (bus-network road within 50 m, raw position kept)",5509.0
+"unmatched fixes (no road within 50 m, raw position kept)",112914.0
+"imputed points (gaps > 90 s, every 60 s)",3143.0
+HMM chain breaks,272.0
+median snap distance of matched fixes (m),4.32
+P95 snap distance of matched fixes (m),15.49

@@ -1,0 +1,44 @@
+# Secrets: TDX and Postgres credentials
+.env
+.env.*
+
+# Course slides and papers
+*.pdf
+
+# Python, OS and Office leftovers
+__pycache__/
+*.py[cod]
+~$*
+Thumbs.db
+desktop.ini
+
+# CCTV: frames, camera lists, models and the camera collection / selection code
+HW1/cctv_samples/
+HW1/config/
+HW1/models/
+HW1/scripts/*cctv*.py
+HW1/scripts/extract_crops.py
+HW1/scripts/evaluate_camera_coverage.py
+HW1/scripts/select_areas.py
+HW1/scripts/plot_bus_tracks.py
+HW1/scripts/maputil.py
+HW1/*camera*.csv
+HW1/candidate_areas.csv
+HW1/design_B_cameras.csv
+*.pt
+
+# Data: raw crawls, processed tables and OSM networks (large; rebuilt by the scripts)
+HW1/data/
+*.parquet
+*.graphml
+
+# Generated outputs: figures, maps, slide decks, run logs, large intermediate tables
+*.html
+*.pptx
+HW1/report/figures/
+HW1/report/v[0-9]*/
+HW1/report/*.txt
+HW1/report/route_shape_paths.csv
+
+# Our own experiment notes
+HW1/EXPERIMENT_LOG.md

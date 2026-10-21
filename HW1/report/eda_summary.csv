@@ -1,0 +1,36 @@
+﻿issue,metric,value,detail
+overview,reports / fixes / buses / routes,"1,138,165 / 1,114,707 / 780 / 301",
+overview,"active buses per poll, 10/16 Fri","median 490, max 559",
+overview,"active buses per poll, 10/17 Sat","median 418, max 449",
+overview,"active buses per poll, 10/18 Sun","median 400, max 462",
+overview,"active buses per poll, 10/19 Mon","median 489, max 616",
+A gaps,fix intervals measured,"1,112,079",median 60s
+A gaps,interval <45 s（過密）,2.77%,
+A gaps,interval 45–90 s（正常）,96.51%,
+A gaps,interval 90–150 s（漏 1 筆）,0.27%,
+A gaps,interval 150 s–15 min（斷訊或停站）,0.20%,
+A gaps,interval >15 min（多為休息、收班）,0.24%,
+A gaps,intervals > 150 s,"4,903",on 705 / 780 buses
+A gaps,of which the bus moved > 300 m on the same route (real transmission gaps),"1,125",on 314 buses
+A gaps,intervals > 15 min where the bus did not move > 300 m or changed route (layover / off duty),"2,392","of 2,641"
+B duplicates/stale,reports that repeat an earlier fix,1.98%,"(22,577)"
+B duplicates/stale,reports older than 5 min,0.07%,(789)
+B duplicates/stale,reports older than 30 min,0.04%,(478)
+B duplicates/stale,reports older than 60 min,0.02%,(263)
+B duplicates/stale,reports with GPSTime after poll time (clock skew),139,
+C drift,fixes inside the study area (OSM network),87.5%,"(974,950)"
+C drift,in-area fixes > 20 m from any road,9.42%,"(91,829)"
+C drift,in-area fixes > 50 m from any road,2.03%,"(19,814)"
+C drift,in-area fixes > 100 m from any road,0.41%,"(3,959)"
+C drift,median distance to road (in-area fixes),4.4 m,
+C drift,fixes > 50 m off-road: share taken while moving (> 5 km/h),10.0%,the rest are mostly buses parked in depots/terminals off the drivable network
+C drift,"single-fix jumps off the road while driving (> 30 m, neighbours < 10 m)",325,on 153 buses
+D outliers,city-route fix pairs with implied speed > 100 km/h,0.021%,(217)
+D outliers,express-route pairs > 100 km/h (mostly real freeway speed),1.59%,"(1,217)"
+D outliers,reported Speed > 90 km/h on city routes,78,
+D outliers,|reported - implied speed| > 30 km/h (dt <= 90 s),3.44%,
+D outliers,fix pairs reporting Speed = 0,47.7%,of those 11.2% moved > 20 km/h on average
+D outliers,buses whose Speed is stuck at 0 while moving,2,"plates ['EAL-2691', 'EAL-2696']"
+D outliers,"placeholder coordinates (120.111109, 22.11111)",30 reports,buses 12
+D outliers,reports outside Kaohsiung,196,
+E latency,median / p95 latency (fresh reports),29 s / 41 s,

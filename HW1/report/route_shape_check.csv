@@ -1,0 +1,29 @@
+check,set,n,median_m,P90_m,within_15m,within_30m,within_50m,share,length_km
+points,raw GPS (all fixes),780392,4.9,16.7,0.885,0.934,0.9457,,
+points,matched: raw GPS,771601,4.9,16.3,0.8883,0.9376,0.9491,,
+points,matched: repaired,771601,1.4,10.1,0.9274,0.9422,0.9488,,
+points,offnet: raw GPS,5458,6.3,352.5,0.6973,0.723,0.7594,,
+points,unmatched: raw GPS,3333,54.6,1458.7,0.4326,0.4515,0.4689,,
+points,imputed: repaired,3143,1.6,96.5,0.84,0.8556,0.8699,,
+points,"matched, raw within 30 m of route: repaired",723446,1.3,5.2,0.9852,0.9993,0.9999,,
+trips,trips in study area,17698,,,,,,,
+trips,trips with median raw distance to route > 100 m,832,,,,,,0.047,
+paths,chord (all segments),2000,,,0.6997,0.8333,0.9032,,23736.0
+paths,hmm (all segments),2000,,,0.925,0.9365,0.9433,,26086.2
+paths,chord (both raw ends within 30 m of route),1967,,,0.7327,0.8682,0.9362,,22431.8
+paths,hmm (both raw ends within 30 m of route),1967,,,0.9697,0.9793,0.9836,,24390.7
+masking k=2,truth (masked GPS fix),5966,4.8,14.0,0.9112,0.9625,0.9708,,
+masking k=2,hmm,5966,1.5,26.6,0.8934,0.9021,0.9145,,
+masking k=2,kalman,5966,28.0,103.6,0.3128,0.5235,0.6938,,
+masking k=2,linear,5966,17.4,113.8,0.467,0.6106,0.7261,,
+masking k=2,spline,5966,26.2,102.8,0.3364,0.5406,0.7137,,
+masking k=4,truth (masked GPS fix),8944,4.9,14.0,0.9117,0.961,0.9696,,
+masking k=4,hmm,8944,1.8,129.0,0.7873,0.8029,0.8211,,
+masking k=4,kalman,8944,55.6,170.9,0.1647,0.3039,0.4612,,
+masking k=4,linear,8944,55.1,183.5,0.2419,0.3528,0.4736,,
+masking k=4,spline,8944,55.2,171.1,0.166,0.3079,0.4644,,
+masking k=8,truth (masked GPS fix),10436,4.8,13.9,0.9117,0.9607,0.9696,,
+masking k=8,hmm,10436,2.9,266.1,0.6368,0.6574,0.6789,,
+masking k=8,kalman,10436,102.6,299.0,0.0772,0.1576,0.2632,,
+masking k=8,linear,10436,108.9,310.4,0.1048,0.1805,0.2742,,
+masking k=8,spline,10436,103.0,301.4,0.0763,0.1554,0.2637,,

@@ -1,0 +1,14 @@
+﻿step,count
+raw reports,1138165
+"1. after de-duplication (plate, gps_time)",1115588
+2. after removing placeholder / out-of-area coordinates,1115476
+"3. clock-skew fixes (flagged, kept)",138
+4. trips after splitting at gaps > 300 s / route or direction changes,22222
+5. speed-spike fixes (in & out > V_MAX),100
+5. buses with >= 5 spikes (all their fixes dropped),9
+5. other trips containing a spike (dropped),20
+5. fixes after dropping those buses and trips,1102640
+6. fixes after removing terminal waits / layovers,900263
+6. trips split at a layover inside the trip,2005
+7. fixes after dropping trips with < 5 fixes or < 300 m extent,890024
+7. trips,18767

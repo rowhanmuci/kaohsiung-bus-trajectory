@@ -42,6 +42,8 @@ HW1/
 │   └── static/osm/            OSM 路網 kaohsiung_drive.* 和 kaohsiung_bus.*（.graphml、_edges.parquet、_nodes.parquet、_summary.json）、study_area.geojson（© OpenStreetMap contributors，ODbL 授權）
 ├── report/figures/            EDA 圖表（eda_*.png）、修復與評估圖表（repair_*.png、network_drive_vs_bus.png、route_vs_repair.png）
 ├── report/HW1_report.pptx     報告投影片（套用 Google 簡報範本；上傳到 Google 簡報後下載 PDF）
+├── report/build_pptx.py       產生報告投影片：先把公式畫成圖（report/formulas/），再套 template.pptx 排版、放進 figures/ 的圖
+├── report/template.pptx       Google 簡報範本（只用它的版面配置）
 ├── report/eda_summary.csv     EDA 各項指標的數字
 ├── report/clean_summary.csv   清理每一步剩下的筆數
 ├── report/repair_params.json  調好的參數（σz、β、σa）和調參結果
@@ -93,6 +95,8 @@ python repair_eval.py         # Part 3：遮點實驗、調參數（8 核心）
 python gps_repair.py          # Part 3：修復全部資料（14 核心）
 python route_shape_check.py   # Part 3：用官方路線線形驗證路徑（14 核心）
 python repair_figures.py      # Part 3：圖表
+cd ../report
+python build_pptx.py          # 報告投影片 HW1_report.pptx（簡報在 PowerPoint 開著時，可指定別的輸出路徑）
 ```
 
 ## 手動執行

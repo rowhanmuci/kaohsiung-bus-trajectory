@@ -35,7 +35,9 @@ HW1/data/
 # Generated outputs: figures, maps, slide decks, run logs, large intermediate tables
 *.html
 *.pptx
+!HW1/report/template.pptx
 HW1/report/figures/
+HW1/report/formulas/
 HW1/report/v[0-9]*/
 HW1/report/*.txt
 HW1/report/route_shape_paths.csv
